@@ -1,4 +1,4 @@
-# Docker-Hello-World-
+# Docimage
 We will create a sample Hello World Docker image from scratch
 
 # Sample Flask Web Application with Python 3.12
@@ -17,7 +17,14 @@ The web application is a simple Flask app that displays "Hello, World!" when acc
 
 ### Prerequisites
 
-- Docker installed on your system
+  Docker installed on your system
+
+# Create a Directory for Docker Image
+
+```bash
+mkdir docimage
+cd docimage
+```
 
 ### Steps to Build and Run the Application
 
@@ -26,10 +33,16 @@ The web application is a simple Flask app that displays "Hello, World!" when acc
    First, we need to create a Python file for our Flask application. This file will define the 
    web server and the route for our app.
 
-   Create a file named app.py in folder docimage with the following content:
+   Use the following command to create the app.py in the folder docimage:
+
+   ```bash
+   nano app.py
+   ```
+   Copy the below following python code in app.py:
+   
    ```bash
    from flask import Flask
-
+   
    app = Flask(__name__)
 
    @app.route('/')
